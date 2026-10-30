@@ -1,0 +1,240 @@
+College fest management website 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Fest</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            background-color: #fff8f1;
+        }
+
+        header {
+            background-color: #a63d62;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        header h1 {
+            font-size: 35px;
+        }
+
+        nav {
+            background-color: #742543;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 12px;
+        }
+
+        .hero {
+            background-color: #ffe1e9;
+            text-align: center;
+            padding: 30px;
+        }
+
+        main {
+            width: 90%;
+            margin: 25px auto;
+        }
+
+        .event {
+            display: inline-block;
+            background-color: white;
+            width: 200px;
+            padding: 18px;
+            margin: 10px;
+            border-top: 5px solid #a63d62;
+            border-radius: 8px;
+            vertical-align: top;
+        }
+
+        h2, .event h3 {
+            color: #a63d62;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        th, td {
+            border: 1px solid #e4cbd4;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f6d5e0;
+        }
+
+        .form-box {
+            background-color: white;
+            padding: 20px;
+            margin-top: 25px;
+            border-radius: 8px;
+        }
+
+        input, select {
+            display: block;
+            width: 90%;
+            max-width: 400px;
+            padding: 10px;
+            margin: 10px 0 15px;
+        }
+
+        button {
+            background-color: #a63d62;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+        }
+
+        footer {
+            background-color: #742543;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 25px;
+        }
+
+        @media (max-width: 600px) {
+            nav a {
+                display: inline-block;
+                margin: 7px;
+            }
+
+            .event {
+                width: 80%;
+            }
+
+            th, td {
+                padding: 7px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>SPARK FEST 2026</h1>
+    <p>Ideas, Talent and Celebration</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#events">Events</a>
+    <a href="#schedule">Schedule</a>
+    <a href="#register">Register</a>
+</nav>
+
+<div class="hero" id="home">
+    <h2>Welcome to Our College Fest!</h2>
+    <p>Join us for technology, music, creativity and fun.</p>
+    <p><b>Date:</b> 15 November 2026</p>
+    <p><b>Venue:</b> College Auditorium</p>
+</div>
+
+<main>
+
+    <h2 id="events">Our Events</h2>
+
+    <div class="event">
+        <h3>Code Challenge</h3>
+        <p>Show your programming skills.</p>
+        <p>Category: Technical</p>
+    </div>
+
+    <div class="event">
+        <h3>Poster Design</h3>
+        <p>Create a creative and attractive poster.</p>
+        <p>Category: Creative</p>
+    </div>
+
+    <div class="event">
+        <h3>Dance and Music</h3>
+        <p>Show your talent on stage.</p>
+        <p>Category: Cultural</p>
+    </div>
+
+    <div class="event">
+        <h3>Quiz Competition</h3>
+        <p>Test your knowledge with your team.</p>
+        <p>Category: General</p>
+    </div>
+
+    <h2 id="schedule">Event Schedule</h2>
+
+    <table>
+        <tr>
+            <th>Time</th>
+            <th>Activity</th>
+            <th>Place</th>
+        </tr>
+
+        <tr>
+            <td>9:00 AM</td>
+            <td>Opening Ceremony</td>
+            <td>Main Stage</td>
+        </tr>
+
+        <tr>
+            <td>10:00 AM</td>
+            <td>Code Challenge</td>
+            <td>Computer Lab</td>
+        </tr>
+
+        <tr>
+            <td>12:00 PM</td>
+            <td>Quiz Competition</td>
+            <td>Seminar Hall</td>
+        </tr>
+
+        <tr>
+            <td>2:00 PM</td>
+            <td>Dance and Music</td>
+            <td>Main Stage</td>
+        </tr>
+    </table>
+
+    <div class="form-box" id="register">
+        <h2>Student Registration</h2>
+
+        <form>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <label for="event">Choose an Event</label>
+            <select id="event">
+                <option>Code Challenge</option>
+                <option>Poster Design</option>
+                <option>Dance and Music</option>
+                <option>Quiz Competition</option>
+            </select>
+
+            <button type="submit">Register</button>
+        </form>
+
+        <p><small>This sample form does not save registration details.</small></p>
+    </div>
+
+</main>
+
+<footer>
+    <p>SPARK FEST 2026 | Organized by the Student Team</p>
+</footer>
+
+</body>
+</html>
